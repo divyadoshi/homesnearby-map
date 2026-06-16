@@ -1355,7 +1355,7 @@ let listingsDataLoaded   = false;
 
 // Kick off the fetch immediately — don't wait for map.whenReady
 // By the time the user sees the map the data is already in flight (or cached)
-const _listingsPrefetch = fetch('/.netlify/functions/listings?city=surrey&province=British%20Columbia')
+const _listingsPrefetch = fetch('/.netlify/functions/listings?city=Surrey&province=British%20Columbia')
   .then(r => r.json())
   .catch(err => ({ error: err.message }));
 
